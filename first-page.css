@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+body {
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.container {
+  background-image: linear-gradient(rgb(45, 51, 64), rgb(52, 57, 69));
+  max-height: 600px;
+  height: 70%;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar {
+  margin: 1em;
+  padding: 2em;
+  overflow: hidden;
+}
+.nav .nav-bar li {
+  display: inline;
+  list-style-type: none;
+}
+.nav-bar a {
+  text-decoration: none;
+  text-align: center;
+  color: #eee;
+  padding: 3em;
+}
+.nav-bar a:hover {
+  background-color: black;
+  color: white;
+}
+.slogan {
+}
+.slogan h1 {
+  color: white;
+  font-weight: bolder;
+  margin: auto;
+  text-align: center;
+}
+.slogan h3 {
+  color: grey;
+  text-align: center;
+}
+
+.Introduction {
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  width: 25em;
+  background-color: rgb(225, 115, 108);
+}
+.Introduction h4 {
+  color: white;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.info {
+  background-color: rgb(225, 115, 108);
+}
+.slogan2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slogan2 p {
+  margin-top: 5em;
+  color: white;
+  font-size: 20px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 10em;
+}
+.btn1 {
+  width: 180px;
+  padding: 12px 10px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  transition: width 0.5s;
+}
+.btn1 img {
+  width: 40px;
+  display: none;
+}
+.btn1:hover img {
+  display: block;
+}
+.btn1:hover {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Details {
+  margin: 5em auto;
+  text-transform: uppercase;
+  text-align: center;
+  width: 25em;
+  background-color: rgb(255, 255, 255);
+}
+.Details h4 {
+  color: black;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.wall-paintaing {
+  position: relative;
+}
+.wall-paintaing img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: auto;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+}
+.service > .service1 {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  width: 75%;
+}
+.service1 > div {
+  border: 1px solid black;
+
+  flex-basis: 25em;
+  height: 15em;
+  margin: 2em;
+  text-align: center;
+}
