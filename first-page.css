@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +7,7 @@
 }
 body {
   height: 100%;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: Poppins;
 }
 .container {
   background-image: linear-gradient(rgb(45, 51, 64), rgb(52, 57, 69));
@@ -55,27 +56,64 @@ body {
   text-transform: uppercase;
   text-align: center;
   width: 25em;
-  background-color: rgb(225, 115, 108);
+  background-color: #e97770;
 }
 .Introduction h4 {
-  color: white;
   color: white;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 .info {
-  background-color: rgb(225, 115, 108);
+  background-color: #e97770;
 }
+/*
 .slogan2 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.slogan2 p {
-  margin-top: 5em;
+}*/
+.slogan2 > .header {
+  padding-top: 3em;
+  font-weight: 300;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  font-size: 20px;
 }
+.header h3 {
+  animation: typing 2s steps(31, end),
+    blink-caret 0.5s step-end infinite alternate;
+  white-space: nowrap;
+}
+/*
+.four h3 {
+  width: 13ch;
+  border-right: 4px solid black;
+  margin: 2rem auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+}*/
+@-webkit-keyframes typing {
+  from {
+    width: 50%;
+  }
+}
+@-webkit-keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.slogan2 .paragraph {
+  margin-top: 2em;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 7em;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -133,12 +171,11 @@ body {
 .service {
   display: flex;
   flex-direction: column;
+  margin-top: 3em;
 }
 .service > .service1 {
   display: flex;
 
-  justify-content: center;
-  align-items: center;
   margin-left: auto;
   margin-right: auto;
   flex-direction: row;
@@ -146,9 +183,22 @@ body {
 }
 .service1 > div {
   border: 1px solid black;
-
   flex-basis: 25em;
   height: 15em;
   margin: 2em;
+  background-image: linear-gradient(rgb(45, 51, 64), rgb(52, 57, 69));
+  /* background-color: rgb(0, 0, 0);*/
+}
+.service i {
+  padding: 1em 2em;
+  font-size: 50px;
+  color: white;
+}
+.text {
   text-align: center;
+  padding: 0em;
+  font-family: Poppins;
+  font-weight: 100;
+  font-size: 20px;
+  color: white;
 }
