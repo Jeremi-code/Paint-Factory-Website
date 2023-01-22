@@ -104,3 +104,21 @@
 .b15{
     background-color:#111e1a;
 }
+
+@media screen and (max-width:1200px){
+    .container div{
+        width:40%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .container div{
+        width:90%;
+    }
+}
+
+@media screen and (min-width:3000px){
+    .container div{
+        width:17%;
+    }
+}
