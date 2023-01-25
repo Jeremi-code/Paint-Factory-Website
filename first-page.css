@@ -188,7 +188,7 @@ body {
   flex-basis: 25em;
   height: 15em;
   margin: 2em;
-  background-image: linear-gradient(rgb(45, 51, 64), rgb(52, 57, 69));
+  background-color: #24262b;
   /* background-color: rgb(0, 0, 0);*/
 }
 .service i {
@@ -205,44 +205,97 @@ body {
   color: white;
 }
 
-footer {
-  height: 20%;
-  background-image: linear-gradient(rgb(45, 51, 64), rgb(52, 57, 69));
-  width: 100%;
-  overflow-x: hidden;
+.container1 {
+  max-width: 1170px;
+  margin: auto;
 }
-
-footer h1 {
-  color: #ddd;
-  font-size: 2em;
+.row {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+  line-height: 1.5;
+}
+ul {
+  list-style-type: none;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
 }
 
-footer h2 {
-  color: #ddd;
-  font-size: 1.6em;
-  display: flex;
-  justify-content: center;
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #e97770;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50%;
 }
-
-footer .icons {
-  color: #ddd;
-  font-size: 1.4em;
-  display: flex;
-  justify-content: center;
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
 }
-
-footer .icons a {
-  color: #ddd;
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
   text-decoration: none;
-  margin: 0 10px;
+  font-weight: 300;
+  color: #bbb;
+  display: block;
+  transition: all 0.3 ease;
 }
 
-footer .icons a #insta:hover {
-  background-image: linear-gradient(60deg, blue, red, yellow);
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 8px;
 }
 
-footer .icons a #twitter:hover {
-  color: #00acee;
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 0 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #fff;
+}
+.copyright {
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  color: #bbb;
+  transform: translateX(-50%);
+  line-height: 40px;
+}
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
