@@ -22,6 +22,8 @@ body {
 .nav-bar {
   margin: 1em;
   padding: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
   overflow: hidden;
 }
 .nav .nav-bar li {
@@ -203,44 +205,44 @@ body {
   color: white;
 }
 
-footer{
-  height:20%;
+footer {
+  height: 20%;
   background-image: linear-gradient(rgb(45, 51, 64), rgb(52, 57, 69));
-  width:100%;
-  overflow-x:hidden;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-footer h1{
-  color:#ddd;
-  font-size:2em;
-  display:flex;
-  justify-content:center;
+footer h1 {
+  color: #ddd;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
 }
 
-footer h2{
-  color:#ddd;
-  font-size:1.6em;
-  display:flex;
-  justify-content:center;
+footer h2 {
+  color: #ddd;
+  font-size: 1.6em;
+  display: flex;
+  justify-content: center;
 }
 
-footer .icons{
-  color:#ddd;
-  font-size:1.4em;
-  display:flex;
-  justify-content:center;
+footer .icons {
+  color: #ddd;
+  font-size: 1.4em;
+  display: flex;
+  justify-content: center;
 }
 
-footer .icons a{
-  color:#ddd;
-  text-decoration:none;
-  margin:0 10px;
+footer .icons a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-footer .icons a #insta:hover{
-  background-image:linear-gradient(60deg, blue,red,yellow);
+footer .icons a #insta:hover {
+  background-image: linear-gradient(60deg, blue, red, yellow);
 }
 
-footer .icons a #twitter:hover{
-  color:#00acee;
+footer .icons a #twitter:hover {
+  color: #00acee;
 }

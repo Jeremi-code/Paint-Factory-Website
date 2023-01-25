@@ -4,33 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="login.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <title>Login</title>
+    <link rel="stylesheet" href="signup.css" />
+    <title>Signup</title>
   </head>
   <body>
     <div class="center">
-      <h1>Login</h1>
+      <h1>SignUp</h1>
       <form method="post">
         <div class="txtField">
           <input type="text" required />
           <span></span>
           <label>Username</label>
         </div>
-
+        <div class="txtField">
+          <input type="text" required />
+          <span></span>
+          <label>Email</label>
+        </div>
         <div class="txtField">
           <input type="password" required />
           <span></span>
           <label>Password</label>
         </div>
+        <div class="txtField">
+          <input type="password" required />
+          <span></span>
+          <label>Re-Enter Password</label>
+        </div>
 
-        <div class="pass">Forgot Password?</div>
         <input type="submit" value="Login" />
         <div class="signup">
-          Don't have an account?<a href="signup.html">Sign up</a>
+          I have an account?<a href="login.html">Sign in</a>
         </div>
       </form>
     </div>
