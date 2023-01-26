@@ -10,36 +10,66 @@ body {
   font-family: Poppins;
 }
 .container {
+  position: relative;
   background-image: linear-gradient(rgb(45, 51, 64), rgb(52, 57, 69));
   max-height: 600px;
   height: 70%;
 }
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.logo {
+  position: relative;
+}
+.logo img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  color: #24262b;
+}
 .nav-bar {
   margin: 1em;
   padding: 2em;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+
   border-radius: 10px;
-  overflow: hidden;
 }
 .nav .nav-bar li {
   display: inline;
   list-style-type: none;
 }
 .nav-bar a {
+  position: relative;
   text-decoration: none;
   text-align: center;
   color: #eee;
-  padding: 3em;
+  padding: 3em 3em 0 3em;
+}
+.nav-bar a:after {
+  content: " ";
+  position: absolute;
+  background-color: #e97770;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
 }
 .nav-bar a:hover {
-  background-color: black;
   color: white;
+  width: 90%;
 }
+
+.nav-bar li:hover a:after {
+  width: 90%;
+}
+
 .slogan {
 }
 .slogan h1 {
@@ -83,11 +113,12 @@ body {
   align-items: center;
   color: white;
 }
-.header h3 {
+
+/* .header h3 {
   animation: typing 2s steps(31, end),
     blink-caret 0.5s step-end infinite alternate;
   white-space: nowrap;
-}
+} */
 /*
 .four h3 {
   width: 13ch;
@@ -97,16 +128,6 @@ body {
   overflow: hidden;
   animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
 }*/
-@-webkit-keyframes typing {
-  from {
-    width: 50%;
-  }
-}
-@-webkit-keyframes blink-caret {
-  50% {
-    border-color: transparent;
-  }
-}
 
 .slogan2 .paragraph {
   margin-top: 2em;
@@ -114,6 +135,16 @@ body {
   text-align: center;
   font-size: 20px;
   margin-bottom: 7em;
+}
+
+.slogan2 {
+  padding-bottom: 8em;
+  text-align: center;
+}
+
+.slogan2 {
+  font-size: 1.5em;
+  letter-spacing: 0.075em;
 }
 
 .btn {
@@ -155,13 +186,12 @@ body {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.content {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
+
 .wall-paintaing {
   position: relative;
+  display: grid;
+  grid-template-rows: auto auto;
+  place-items: center;
 }
 .wall-paintaing img {
   display: block;
@@ -170,7 +200,7 @@ body {
   width: 70%;
   height: auto;
 }
-.service {
+/* .service {
   display: flex;
   flex-direction: column;
   margin-top: 3em;
@@ -189,7 +219,7 @@ body {
   height: 15em;
   margin: 2em;
   background-color: #24262b;
-  /* background-color: rgb(0, 0, 0);*/
+  background-color: rgb(0, 0, 0);
 }
 .service i {
   padding: 1em 2em;
@@ -203,8 +233,70 @@ body {
   font-weight: 100;
   font-size: 20px;
   color: white;
+} */
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.content {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: auto auto auto auto;
+  justify-content: space-evenly;
+  gap: 100px;
 
+  position: relative;
+  margin-bottom: 70px;
+}
+.wall-paintaing {
+  grid-column: 1 / span 2;
+  height: auto;
+}
+.wall-paintaing img {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.content .con {
+  position: relative;
+}
+.con .header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.con .header h3 {
+  margin: 8px 3px 10px 15px;
+}
+.content div :after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  background-color: #f0f0f0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+}
+.content h3 {
+  color: #e97770;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.content i {
+  border: 2px solid black;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 30px;
+  padding: 15px;
+  background-color: #2e323a;
+}
+.con p {
+  margin-left: 70px;
+  margin-right: 10px;
+  color: #a09ca5;
+}
 .container1 {
   max-width: 1170px;
   margin: auto;
