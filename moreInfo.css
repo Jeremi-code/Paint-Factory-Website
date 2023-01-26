@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;   
+    box-sizing:border-box;
+}
+.upper{
+    background-image:linear-gradient(rgb(45, 51, 64), rgb(52, 57, 69));
+}
+
+.contents{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.contents .img img{
+    width:300px;
+    margin:30px 0;
+}
+
+.contents .para{
+    color:#fcfc;
+    width:700px;
+    line-height:28px;
+    letter-spacing:2px;
+}
+
+.ceo{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.ceo img{
+    margin:30px 0;
+    width:400px;
+    clip-path:circle();
+}
+
+.ceo .txt{
+    width:550px;
+}
+
+.ceo .txt h1{
+    font-size:30px;
+}
+
+.ceo .txt h3{
+    font-size:20px;
+}
+
+.ceo .txt p{
+    line-height:20px;
+    letter-spacing:2px;
+}
+
+.manager{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.manager img{
+    margin:30px 0;
+    width:400px;
+    clip-path:circle();
+}
+
+.manager .txt{
+    width:550px;
+}
+
+.manager .txt h1{
+    font-size:30px;
+}
+
+.manager .txt h3{
+    font-size:20px;
+}
+
+.manager .txt p{
+    line-height:20px;
+    letter-spacing:2px;
+}
+
+.boundary{
+    border:solid 2px #444;
+    width:70%;
+    margin:20px auto;
+} 
+
+.theTitle h1{
+    margin:20px 0;
+    font-size:30px;
+    text-align:center;
+    letter-spacing:3px;
+}
+
+.companies{
+    padding:30px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:1em;
+}
+
+.b01{
+    display:flex;
+    flex-direction:column;
+}
+
+.b01 img{
+    width:320px;
+}
+
+.b01 h1{
+    font-size:20px;
+    text-align:center;
+}
+
+.b02{
+    display:flex;
+    flex-direction:column;
+}
+
+.b02 img{
+    width:320px;
+}
+
+.b02 h1{
+    font-size:20px;
+    text-align:center;
+}
+
+.b03{
+    display:flex;
+    flex-direction:column;
+}
+
+.b03 img{
+    width:320px;
+}
+
+.b03 h1{
+    font-size:20px;
+    text-align:center;
+}
+
+.b04{
+    display:flex;
+    flex-direction:column;
+}
+
+.b04 img{
+    width:320px;
+}
+
+.b04 h1{
+    font-size:20px;
+    text-align:center;
+}
+
+.b05{
+    display:flex;
+    flex-direction:column;
+}
+
+.b05 img{
+    width:320px;
+}
+
+.b05 h1{
+    font-size:20px;
+    text-align:center;
+}
+
+.b06{
+    display:flex;
+    flex-direction:column;
+}
+
+.b06 img{
+    width:320px;
+}
+
+.b06 h1{
+    font-size:20px;
+    text-align:center;
+}
