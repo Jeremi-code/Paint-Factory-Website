@@ -56,6 +56,57 @@
     width: 90%;
   }
 
+  .checkbtn{
+    color:white;
+    font-size:30px;
+    display:none;
+  }
+  
+  .nav input{
+  display:none;
+  }
+  
+  @media(max-width:900px){
+     *{
+      margin:0;
+      padding:0;
+     }
+    .checkbtn{
+      display:block;
+      position:relative;
+      right:50%;
+    }
+    .nav{
+      padding:22px;
+    }
+    ul{
+      position:fixed;
+      width:105%;
+      height:100vh;
+      text-align:center;
+      background-color:#e97770;
+      left:-150%;
+      top:62px;
+      transition:0.5s;
+    }
+  
+    .nav ul li a{
+      display:block;
+      font:50px;
+      color:rgb(45, 51, 64);
+    }
+  
+    .nav ul li a:hover{
+      color:white;
+    }
+  
+    #check:checked~ul{
+      position:absolute;
+      left:-5%;
+    }
+  
+  }
+
   /*.prod-nav{
       margin:20px 0;
       display:flex;
@@ -197,6 +248,102 @@ h2{
 
   .spec{
     flex-direction:column;
+  }
+}
+
+.container1 {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+  line-height: 1.5;
+}
+ul {
+  list-style-type: none;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #e97770;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50%;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbb;
+  display: block;
+  transition: all 0.3 ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 0 0;
+  text-align: center;
+  line-height: 40px;
+  padding:10px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #fff;
+}
+.copyright {
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  color: #bbb;
+  transform: translateX(-50%);
+  line-height: 40px;
+}
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 
