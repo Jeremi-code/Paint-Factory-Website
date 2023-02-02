@@ -70,6 +70,57 @@ body {
   width: 90%;
 }
 
+.checkbtn{
+  color:white;
+  font-size:30px;
+  display:none;
+}
+
+.nav input{
+display:none;
+}
+
+@media(max-width:900px){
+   *{
+    margin:0;
+    padding:0;
+   }
+  .checkbtn{
+    display:block;
+    position:relative;
+    right:50%;
+  }
+  .nav{
+    padding:22px;
+  }
+  ul{
+    position:fixed;
+    width:105%;
+    height:100vh;
+    text-align:center;
+    background-color:#e97770;
+    left:-150%;
+    top:62px;
+    transition:0.5s;
+  }
+
+  .nav ul li a{
+    display:block;
+    font:50px;
+    color:rgb(45, 51, 64);
+  }
+
+  .nav ul li a:hover{
+    color:white;
+  }
+
+  #check:checked~ul{
+    position:absolute;
+    left:-5%;
+  }
+
+}
+
 .slogan {
 }
 .slogan h1 {
@@ -297,6 +348,13 @@ body {
   margin-right: 10px;
   color: #a09ca5;
 }
+@media(max-width:1050px){
+  
+  .con{
+  grid-column: 1/span 2;    
+
+  }
+}
 .container1 {
   max-width: 1170px;
   margin: auto;
@@ -364,7 +422,7 @@ ul {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #fff;
+  color:#fff;
   transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover {
@@ -383,6 +441,9 @@ ul {
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+  }
+  .footer-col li{
+    display: block;
   }
 }
 @media (max-width: 574px) {
