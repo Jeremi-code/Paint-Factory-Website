@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.bound{
+    border:solid 2px #444;
+    width:70%;
+    margin:30px auto;
+}
+
+.container .nati{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.container .nati img{
+    width:400px;
+    clip-path:circle();
+}
+
+.container .nati .txt{
+    line-height:40px;
+    font-size:28px;
+}
+
+.container .ermi{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.container .ermi img{
+    width:400px;
+    clip-path:circle();
+}
+
+.container .ermi .txt{
+    line-height:40px;
+    font-size:28px;
+}

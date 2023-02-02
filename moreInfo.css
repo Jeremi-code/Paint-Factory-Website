@@ -44,15 +44,21 @@
 
 .ceo .txt h1{
     font-size:30px;
+    font-style:poppins;
+    margin-bottom:10px;
 }
 
 .ceo .txt h3{
     font-size:20px;
+    font-style:poppins;
+    margin-bottom:10px;
+    color:#aaa;
 }
 
 .ceo .txt p{
     line-height:20px;
     letter-spacing:2px;
+    font-style:poppins;
 }
 
 .manager{
@@ -73,15 +79,21 @@
 
 .manager .txt h1{
     font-size:30px;
+    font-style:poppins;
+    margin-bottom:10px;
 }
 
 .manager .txt h3{
     font-size:20px;
+    font-style:poppins;
+    margin-bottom:10px;
+    color:#aaa;
 }
 
 .manager .txt p{
     line-height:20px;
     letter-spacing:2px;
+    font-style:poppins;
 }
 
 .boundary{

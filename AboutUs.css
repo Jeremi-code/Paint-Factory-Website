@@ -9,6 +9,57 @@ body{
     background-image: linear-gradient(rgb(45, 51, 64), rgb(52, 57, 69));
 }
 
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(45, 51, 64), rgb(52, 57, 69));
+  }
+
+.nav h1{
+    color:#eee;
+    font-size:22px;
+}
+
+.nav-bar {
+    margin: 1em;
+    padding: 2em;
+  
+    border-radius: 10px;
+  }
+  .nav .nav-bar li {
+    display: inline;
+    list-style-type: none;
+  }
+  .nav-bar a {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    color: #eee;
+    padding: 3em 3em 0 3em;
+  }
+  .nav-bar a:after {
+    content: " ";
+    position: absolute;
+    background-color: #e97770;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+  }
+  .nav-bar a:hover {
+    color: white;
+    width: 90%;
+  }
+  
+  .nav-bar li:hover a:after {
+    width: 90%;
+  }
+
 .about{
     width:100%;
     padding:70px 0;
