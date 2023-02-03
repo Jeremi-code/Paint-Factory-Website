@@ -3,25 +3,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="purchase.css">
     <title>Purchase</title>
 </head>
 <body>
-    <form>
-        <div class="txtField">
-            <label>Choose your paint type</label>
-           <select>
-               <option>quartz</option>
-               <option>varnish</option>
-               <option>normalx</option>
-           </select> 
+    <div class="center">
+          <form>
+              <div class="title">
+                   <h2>Purchasing Form</h2>
+                   <h3>Thank You For Choosing Mamush Paints!!!</h3>
+              </div>
+
+              <div class="in">
+                <label>Enter your Address</label>
+                <input type="text" required /> 
+            </div>
+
+            <div class="in">
+                <label>Country</label>
+                <input type="number" required /> 
+            </div>
+              
+              <div class="in">
+                  <label>Choose your paint type</label>
+                  <select>
+                     <option>Super Emulsion</option>
+                     <option>Quartz</option>
+                     <option>Wall Primer</option>
+                     <option>Wall Putty</option>
+                     <option>2K PU Sealer</option>
+                     <option>Varnish</option>
+                     <option>NC Sanding Sealer</option>
+                     <option>Auto Lacquer</option>
+                     <option>Nitrocellulose NC</option>
+                     <option>Polyester Putty</option>
+                     <option>Fast Drying Synthetic Paint</option>
+                     <option>Epoxy</option>
+                     <option>2K Metal</option>
+                     <option>Enamels</option>
+                  </select> 
+             </div>
+        
+        <div class="in">
+            <label>Choose the amount of paint</label>
+            <input type="number" required /> 
         </div>
         
-        <div class="txtField">
-            <input type="number" required />
-            <label>Choose the amount of paint</label>
+        <div class="sub">
+            <input type="submit" value="Purchase" class="submit">
         </div>
         
     </form>
+    </div>
+    
 </body>
 </html>

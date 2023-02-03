@@ -93,7 +93,7 @@ display:none;
   .nav{
     padding:22px;
   }
-  ul{
+  .nav ul{
     position:fixed;
     width:105%;
     height:100vh;
