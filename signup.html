@@ -10,7 +10,12 @@
   <body>
     <div class="center">
       <h1>SignUp</h1>
-      <form method="post" class="form-container" id="form">
+      <form
+        action="http://localhost/mywebsites/signUP.php"
+        method="post"
+        class="form-container"
+        id="form"
+      >
         <div class="txtField">
           <input
             type="text"
@@ -38,7 +43,7 @@
             type="password"
             name="password-one"
             id="password-one"
-            pattern="^[a-zA-Z0-9_]+@[a-zA-Z]+[.]+com$"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
             required
           />
           <span></span>
@@ -47,7 +52,7 @@
         <div class="txtField">
           <input
             type="password"
-            pattern="^[a-zA-Z0-9_]+@[a-zA-Z]+[.]+com$"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
             name="password-two"
             id="password-two"
             required
