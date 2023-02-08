@@ -90,20 +90,6 @@ body {
     position: relative;
     right: 50%;
   }
-<<<<<<< HEAD
-  .nav {
-    padding: 22px;
-  }
-  .nav ul {
-    position: fixed;
-    width: 105%;
-    height: 100vh;
-    text-align: center;
-    background-color: #e97770;
-    left: -150%;
-    top: 62px;
-    transition: 0.5s;
-=======
   .nav ul{
     position:fixed;
     width:105%;
@@ -113,7 +99,6 @@ body {
     left:-150%;
     top:62px;
     transition:0.5s;
->>>>>>> edfb3658cd6827414bb2b687b58a8b6f57ddd9f5
   }
 
   .nav ul li a {
