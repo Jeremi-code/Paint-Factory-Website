@@ -1,6 +1,7 @@
 
 
 <?php
+    session_start();
 
 // if (isset($_POST['submit'])) {
     if (isset($_POST['username']) && isset($_POST['password-one']) &&
@@ -10,6 +11,7 @@
             $email = $_POST['email'];
             $password = $_POST['password-one'];
             $password_confirm = $_POST['password-two'];
+            $_SESSION['email']=$email;
 
         $host = "localhost";
         $dbUsername = "root";

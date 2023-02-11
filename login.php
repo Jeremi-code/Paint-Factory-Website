@@ -29,8 +29,8 @@ if ($result->num_rows > 0) {
     // Login successful
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $username;
-    // header("location: blog.php");
-    echo("You are sucessfully authenticated");
+    //header("location: blog.php");
+    echo "You are sucessfully authenticated";
     exit;
 } 
 else {
